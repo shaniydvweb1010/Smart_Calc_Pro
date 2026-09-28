@@ -1,3 +1,2 @@
 # Smart_Calc_Pro
-Smart Calculator Pro
-A premium calculator built using HTML5, CSS3, and JavaScript.
+Smart Calc Pro is a JavaScript-based calculator project designed to provide a simple and interactive calculation experience with both traditional input and voice-based calculation.
