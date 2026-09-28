@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>SmartCalc Pro | Dark Mode + Keyboard Highlight</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  </style>
+</head>
+<body>
+<div class="calculator">
+  <div class="branding">
+    <h1>SmartCalc Pro</h1>
+    <div class="underline"></div>
+    <div class="tagline">Smart. Fast.Calculation Experience.</div>
+  </div>
+
+  <div class="calc-header">
+    <button class="history-icon" id="historyBtn"><i class="fas fa-history"></i> History</button>
+    <div class="mode-controls">
+      <button class="rad-toggle" id="radToggle">DEG</button>
+      <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-knob"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="display-wrapper">
+    <div class="display">
+      <div class="expression" id="expression"></div>
+      <div class="result" id="result">0</div>
+    </div>
+  </div>
+
+  <div class="voice-section">
+    <button class="mic-btn" id="micBtn"><i class="fas fa-microphone"></i></button>
+  </div>
+  
+  <div class="sci-grid">
+    <button class="function-btn" data-func="sin">sin</button>
+    <button class="function-btn" data-func="cos">cos</button>
+    <button class="function-btn" data-func="tan">tan</button>
+    <button class="function-btn" data-func="log">log</button>
+    <button class="function-btn" data-func="ln">ln</button>
+    <button class="function-btn" data-func="sqrt">√</button>
+
+    <button class="function-btn" data-func="square">x²</button>
+    <button class="function-btn" data-func="power">xʸ</button>
+    <button class="function-btn" data-func="fact">n!</button>
+    <button class="function-btn" data-const="pi">π</button>
+    <button class="function-btn" data-const="e">e</button>
+    <button class="operator-btn" data-op="(">(</button>
+
+    <button class="operator-btn" data-op=")">)</button>
+    <button class="operator-btn" data-op="%">%</button>
+    <button class="special-btn" data-action="clear">C</button>
+    <button class="special-btn" data-op="⌫">⌫</button>
+    <button class="operator-btn" data-op="/">÷</button>
+    <button class="operator-btn" data-op="*">×</button>
+
+    <button class="number-btn" data-num="7">7</button>
+    <button class="number-btn" data-num="8">8</button>
+    <button class="number-btn" data-num="9">9</button>
+    <button class="operator-btn" data-op="-">-</button>
+    <button class="operator-btn" data-op="+">+</button>
+    <button class="equal-btn" data-action="equal">=</button>
+
+    <button class="number-btn" data-num="4">4</button>
+    <button class="number-btn" data-num="5">5</button>
+    <button class="number-btn" data-num="6">6</button>
+    <button class="function-btn" data-func="cube">x³</button>
+    <button class="function-btn" data-func="recip">1/x</button>
+    <button class="function-btn" data-func="exp">eˣ</button>
+
+    <button class="number-btn" data-num="1">1</button>
+    <button class="number-btn" data-num="2">2</button>
+    <button class="number-btn" data-num="3">3</button>
+    <button class="number-btn" data-num="0">0</button>
+    <button class="number-btn" data-num=".">.</button>
+    <button class="function-btn" data-func="abs">|x|</button>
+  </div>
+  <div class="bottom-bar"> <h4> Premium  Voice  Keyboard Ready </h4> </div>
+</div>
+
+<div class="history-panel hidden" id="historyPanel">
+  <div class="history-header">
+    <span><i class="fas fa-history"></i> History</span>
+    <button id="clearHistoryBtn" style="background:none; border:none; color:#f87171; cursor:pointer;"><i class="fas fa-trash"></i> Clear</button>
+  </div>
+  <ul class="history-list" id="historyList"><li style="opacity:0.6; text-align:center;">— Empty —</li></ul>
+</div>
+<script src="style.js"></script>
+</body>
+</html>
