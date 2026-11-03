@@ -1,6 +1,6 @@
 # Smart_Calc_Pro
 # 🧮 Smart Calc Pro
-
+# 🌐 Live Demo: https://smartvoicecalcpro10.netlify.app
 A modern, responsive calculator web application with **Voice Calculator** support, built using HTML, CSS, and JavaScript.
 
 ## ✨ Features
